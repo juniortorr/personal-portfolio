@@ -1,6 +1,5 @@
-# basicProjectSetup
-- a basic setup for: 
-  - webpack
-  - eslint
-  - development enviroment
-  - basic loaders/plugins
+# Portfolio
+
+- Made with CSS, HTML, Javascript.
+- Heavy emphasis on WCAG Acessibility guidelines
+- Semantic Code
