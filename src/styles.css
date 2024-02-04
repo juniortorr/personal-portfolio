@@ -133,11 +133,9 @@ table {
 }
 
 nav {
-  position: absolute;
-  right: 50px;
-  top: 50px;
   display: flex;
   gap: 10px;
+  align-self: flex-end;
 }
 nav li {
   display: flex;
@@ -155,12 +153,17 @@ nav img {
 }
 
 .hero {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background: linear-gradient(#07383c, #9dd6aa);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 450px;
 }
 .hero-text {
   display: flex;
@@ -173,7 +176,10 @@ nav img {
 }
 .hero-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
+  margin-bottom: 20px;
 }
 .hero-heading {
   font-size: 45px;
@@ -188,9 +194,6 @@ nav img {
   font-weight: bold;
 }
 .hero-btn {
-  position: absolute;
-  right: -10px;
-  bottom: -85px;
   width: 155px;
   height: 55px;
   border-radius: var(--border-radius);
@@ -199,6 +202,11 @@ nav img {
   font-weight: 600;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+.scribble {
+  margin-bottom: 10px;
 }
 .text-highlight {
   color: var(--accent-color);
