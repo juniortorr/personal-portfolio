@@ -26,12 +26,8 @@ module.exports = {
         loader: 'handlebars-loader',
       },
       {
-        test: /\.(plug|jpg|jpeg|gif|png)$/i,
+        test: /\.(plug|jpg|jpeg|gif|png|svg)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.(svg)$/i,
-        type: 'asset/inline',
       },
       {
         test: /\.(woff|woff2|eot|tff|otf)$/i,
