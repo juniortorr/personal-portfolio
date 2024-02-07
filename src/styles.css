@@ -136,6 +136,9 @@ table {
   --paragraph-font-family: 'Fira Sans Condensed', sans-serif;
   --paragraph-color: #4b4b4b;
   letter-spacing: 0.6px;
+  --card-heading-mobile: 22px;
+  --card-subheading-mobile: 18px;
+  --card-paragraph-mobile: 16px;
 }
 
 html {
@@ -355,19 +358,73 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* padding: 20px 40px; */
   box-sizing: border-box;
+  padding: 20px;
+  gap: 40px;
+  /* padding-left: 40px; */
+}
+
+.card-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.experience-heading {
+  align-self: flex-start;
+  font-size: var(--mobile-heading-size);
+  font-weight: var(--heading-weight);
 }
 .experience-card {
   display: flex;
   flex-direction: column;
   max-width: 340px;
-  /* padding: 0px 50px; */
+  border: 2px solid black;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 .experience-card > img {
-  height: 50%;
+  height: auto;
   width: 100%;
-  min-width: 250px;
+}
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.card-heading-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-icons img {
+  height: 32px;
+  width: 32px;
+}
+.card-icons {
+  display: flex;
+  gap: 10px;
+}
+.project-title {
+  font-size: var(--card-heading-mobile);
+  font-weight: var(--heading-weight);
+}
+.card-subheading {
+  font-size: var(--card-subheading-mobile);
+}
+.project-para {
+  font-size: var(--card-paragraph-mobile);
+  font-family: var(--paragraph-font-family);
+  line-height: 1.2;
+  color: var(--paragraph-color);
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 /*  */
 @media (max-width: 320px) {
