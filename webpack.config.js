@@ -1,29 +1,25 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
 const path = require('path');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    index: './src/app.js',
-  },
   devtool: 'inline-source-map',
+  // enable live reload after changes
   devServer: {
-    static: './dist',
+    static: path.join(__dirname, 'dist'),
+    watchFiles: {
+      paths: ['src/**/*.*'],
+      options: {
+        usePolling: true,
+      },
+    },
   },
   module: {
     rules: [
       {
-        test: /\.html$/i,
-        loader: 'html-loader',
-      },
-      {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.handlebars$/,
-        loader: 'handlebars-loader',
+        use: ['css-loader'],
       },
       {
         test: /\.(plug|jpg|jpeg|gif|png|svg)$/i,
@@ -54,15 +50,28 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/views/home.html',
-      minify: true,
+    new HtmlBundlerPlugin({
+      entry: {
+        // define templates here
+        // CSS/SCSS and JS source files define directly in HTML
+        index: './src/views/home.html', // => dist/index.html
+      },
+      js: {
+        // JS output filename, used if `inline` option is false (defaults)
+        filename: 'js/[name].[contenthash:8].js',
+        // inline: true, // inlines JS into HTML
+      },
+      css: {
+        // CSS output filename, used if `inline` option is false (defaults)
+        filename: 'css/[name].[contenthash:8].css',
+        // inline: true, // inlines CSS into HTML
+      },
+      minify: 'auto', // minify HTML only in production mode
     }),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: 'main.js',
     assetModuleFilename: 'images/[name]',
   },
 };
