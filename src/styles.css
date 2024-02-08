@@ -433,7 +433,7 @@ main {
 }
 .contact {
   width: 100%;
-  padding: 50px 40px;
+  padding: 70px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -441,6 +441,7 @@ main {
   box-sizing: border-box;
   gap: 30px;
   background-color: var(--dark-main-color);
+  padding-bottom: 80px;
 }
 .contact > h2 {
   text-align: center;
