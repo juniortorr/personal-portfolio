@@ -1,0 +1,9 @@
+Languages I speak
+    [current languages], [languages in progress]
+    loop through the img tags and populate them with the current array
+        wait 4 seconds 
+        add class = "top-slide" & class = "bottom-slide"
+        loop through the images and replace them with the other ones
+
+setImgs 
+    select all of the current imgs 

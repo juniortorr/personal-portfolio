@@ -145,7 +145,15 @@ table {
     transform: translateY(-15px);
   }
 }
-
+.slide-left {
+  transform: translateX(1000px);
+}
+.slide-right {
+  transform: translateX(-1000px);
+}
+.disappear {
+  transform: scale(0);
+}
 html {
   width: 100vw;
   box-sizing: border-box;
@@ -320,6 +328,9 @@ main {
   gap: 10px;
   align-items: center;
 }
+.language-header-txt {
+  transition: transform 0.4s ease-in-out;
+}
 .languages-header img {
   width: 45px;
 }
@@ -333,12 +344,10 @@ main {
   gap: 40px;
   box-sizing: border-box;
   border-radius: 15px;
-  overflow: visible;
-  z-index: 4;
+  overflow: hidden;
   box-sizing: border-box;
   min-width: 200px;
   border: none;
-  /* min-height: 420px; */
 }
 
 .languages-icons {
@@ -359,13 +368,15 @@ main {
   font-weight: var(--heading-weight);
 }
 .icon {
-  height: auto;
+  height: 89px;
+  width: 89px;
 }
 .top-icons,
 .lower-icons {
   display: flex;
   justify-content: center;
   gap: 25px;
+  transition: all 0.5s ease-in;
 }
 
 .slider-selectors {
