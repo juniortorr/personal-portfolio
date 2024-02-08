@@ -140,6 +140,11 @@ table {
   --card-subheading-mobile: 18px;
   --card-paragraph-mobile: 16px;
 }
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
 
 html {
   width: 100vw;
@@ -147,7 +152,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -165,6 +170,11 @@ nav li {
   background-color: var(--button-color);
   border-radius: var(--border-radius);
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s ease-in-out;
+}
+nav li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 nav img {
   height: auto;
@@ -223,9 +233,21 @@ nav img {
   align-self: flex-end;
   margin-top: 20px;
   background-color: var(--button-color);
+  transition: all 0.1s ease-in-out;
+}
+.hero-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 0, 0, 0);
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
 }
 .scribble {
   padding-bottom: 20px;
+  animation-name: bounce;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 .text-highlight {
   color: var(--accent-color);
@@ -344,7 +366,6 @@ main {
   display: flex;
   justify-content: center;
   gap: 25px;
-  /* gap: 30px; */
 }
 
 .slider-selectors {
@@ -366,7 +387,6 @@ main {
   box-sizing: border-box;
   padding: 40px 20px;
   gap: 40px;
-  /* padding-left: 40px; */
 }
 
 .card-collection {
@@ -516,6 +536,7 @@ footer img {
   align-items: center;
   justify-content: center;
 }
+
 /*  */
 @media (max-width: 320px) {
   .languages-card {
