@@ -494,28 +494,18 @@ textarea {
   height: auto;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-footer > svg {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  width: 100%;
-}
-.footer-text {
-  position: relative;
-  bottom: 25px;
-  z-index: 2;
-  width: 100%;
   display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  /* flex-direction: column; */
   align-items: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   font-size: var(--mobile-paragraph-size);
   font-weight: var(--heading-weight);
 }
+
 footer img {
   height: auto;
   width: 25px;
