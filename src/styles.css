@@ -189,7 +189,7 @@ nav img {
   flex-direction: column;
   gap: 10px;
   max-width: 245px;
-  color: white;
+  color: var(--button-color);
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
   line-height: 1.1;
 }
@@ -222,6 +222,7 @@ nav img {
   cursor: pointer;
   align-self: flex-end;
   margin-top: 20px;
+  background-color: var(--button-color);
 }
 .scribble {
   padding-bottom: 20px;
@@ -233,6 +234,9 @@ main {
   width: 100%;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #07383c;
 }
 
 /* about me section */
@@ -360,11 +364,9 @@ main {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 40px 20px;
   gap: 40px;
   /* padding-left: 40px; */
-  clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
-  padding-bottom: 150px;
 }
 
 .card-collection {
@@ -432,17 +434,14 @@ main {
 .contact {
   width: 100%;
   padding: 50px 40px;
-  padding-top: 100px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   gap: 30px;
-  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0 100%);
   background-color: var(--dark-main-color);
-  position: relative;
-  padding-bottom: 100px;
-  bottom: 100px;
+  padding-bottom: 300px;
 }
 .contact > h2 {
   text-align: center;
@@ -489,6 +488,43 @@ textarea {
   width: 100%;
   border-radius: 15px;
   padding: 10px;
+}
+.slant {
+  width: 100%;
+  height: auto;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer > svg {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+.footer-text {
+  position: relative;
+  bottom: 25px;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: var(--mobile-paragraph-size);
+  font-weight: var(--heading-weight);
+}
+footer img {
+  height: auto;
+  width: 25px;
+}
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 /*  */
 @media (max-width: 320px) {
