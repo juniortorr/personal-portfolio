@@ -44,7 +44,7 @@ function cardAnimationLoop() {
   }, 600);
   setTimeout(() => {
     cardAnimationLoop();
-  }, 6000);
+  }, 5000);
 }
 
 cardAnimationLoop();

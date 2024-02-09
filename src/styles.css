@@ -145,6 +145,19 @@ table {
     transform: translateY(-15px);
   }
 }
+@keyframes fade-in {
+  0% {
+    /* opacity: 0; */
+    transform: translateY(1000px);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .slide-left {
   transform: translateX(1000px);
@@ -427,6 +440,7 @@ main {
   border: 2px solid black;
   border-radius: 15px;
   box-sizing: border-box;
+  opacity: 0;
 }
 .experience-card > img {
   height: auto;
@@ -554,6 +568,10 @@ footer img {
   gap: 12px;
   align-items: center;
   justify-content: center;
+}
+.fade-in {
+  animation: fade-in 1s ease-in-out 0.2s 1;
+  opacity: 1;
 }
 
 /*  */
