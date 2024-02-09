@@ -130,15 +130,15 @@ table {
   --border-radius: 10px;
   --paragraph-weight: 300;
   --heading-weight: 500;
-  --mobile-heading-size: 29px;
-  --mobile-paragraph-size: 18px;
+  --mobile-heading-size: 1.8rem;
+  --mobile-paragraph-size: 1.1rem;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
   --paragraph-font-family: 'Fira Sans Condensed', sans-serif;
   --paragraph-color: #4b4b4b;
   letter-spacing: 0.6px;
-  --card-heading-mobile: 22px;
-  --card-subheading-mobile: 18px;
-  --card-paragraph-mobile: 16px;
+  --card-heading-mobile: 1.4rem;
+  --card-subheading-mobile: 1.15rem;
+  --card-paragraph-mobile: 1rem;
 }
 @keyframes bounce {
   50% {
@@ -194,6 +194,7 @@ nav {
   display: flex;
   gap: 10px;
   align-self: flex-end;
+  margin-right: 20px;
 }
 nav li {
   display: flex;
@@ -244,15 +245,15 @@ nav img {
   padding: 10px;
 }
 .hero-heading {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 .hero-subheading {
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .job-title {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
 }
 .hero-btn {
@@ -260,7 +261,7 @@ nav img {
   height: 55px;
   border-radius: var(--border-radius);
   border: none;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -602,4 +603,37 @@ footer img {
   .languages-header h2 {
     font-size: 25px;
   }
+}
+@media (min-width: 475px) {
+  .contact {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 640px) {
+  .hero-text {
+    max-width: 500px;
+  }
+  .about-me {
+    padding: 70px 60px;
+  }
+  .languages-card {
+    padding: 80px 120px;
+  }
+  .experience {
+    padding: 40px 30px;
+  }
+  .contact {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 17px;
+  }
+  .about-me {
+    padding: 70px 80px;
+  }
+}
+@media (min-width: 1024px) {
 }
