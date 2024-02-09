@@ -33,20 +33,19 @@ const checkSlide = () => {
   return setImgs(currentLanguages);
 };
 
-function handleMouseOver() {
+function cardAnimationLoop() {
   topIcons.classList.add('slide-left');
   lowerIcons.classList.add('slide-right');
   header.classList.add('disappear');
-  card.removeEventListener('mouseover', handleMouseOver);
   setTimeout(() => {
     checkSlide();
     header.classList.remove('disappear');
     topIcons.classList.remove('slide-left');
     lowerIcons.classList.remove('slide-right');
-  }, 300);
+  }, 600);
   setTimeout(() => {
-    card.addEventListener('mouseover', handleMouseOver);
-  }, 2000);
+    cardAnimationLoop();
+  }, 6000);
 }
 
-card.addEventListener('mouseover', handleMouseOver);
+cardAnimationLoop();

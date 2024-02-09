@@ -145,6 +145,7 @@ table {
     transform: translateY(-15px);
   }
 }
+
 .slide-left {
   transform: translateX(1000px);
 }
@@ -376,7 +377,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 25px;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
+}
+.top-icons {
+  animation-name: slide-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 .slider-selectors {
