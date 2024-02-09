@@ -147,8 +147,8 @@ table {
 }
 @keyframes fade-in {
   0% {
-    /* opacity: 0; */
-    transform: translateY(1000px);
+    opacity: 0;
+    transform: translateY(100px);
   }
   75% {
     opacity: 0.75;
@@ -611,8 +611,11 @@ footer img {
 }
 
 @media (min-width: 640px) {
+  nav li {
+    padding: 10px 15px;
+  }
   .hero-text {
-    max-width: 500px;
+    max-width: none;
   }
   .about-me {
     padding: 70px 60px;
@@ -634,6 +637,84 @@ footer img {
   .about-me {
     padding: 70px 80px;
   }
+  .about-me-header {
+    max-width: 700px;
+  }
+  .about-me-text {
+    max-width: 700px;
+  }
 }
 @media (min-width: 1024px) {
+  :root {
+    font-size: 17.5px;
+  }
+  .languages-i-speak {
+    transform: scale(1.1);
+    padding: 40px;
+  }
+  .about-me {
+    padding: 100px;
+  }
+  .contact > * {
+    transform: scale(1.1);
+  }
+  .contact {
+    padding-bottom: 100px;
+  }
+  textarea {
+    width: 400px;
+  }
+}
+@media (min-width: 1120px) {
+  .experience-heading {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1120px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-content {
+    transform: scale(1.05);
+  }
+
+  .about-me {
+    padding: 150px;
+  }
+  .languages-card {
+    padding: 100px 120px;
+  }
+  footer {
+    justify-content: center;
+    gap: 200px;
+  }
+}
+@media (min-width: 1536px) {
+  .hero-content {
+    transform: scale(1.2);
+  }
+  .scribble {
+    transform: scale(1.2);
+  }
+  .about-me {
+    padding: 200px;
+  }
+  .about-me-header {
+    font-size: 2rem;
+  }
+  .line {
+    width: 135px;
+  }
+  .about-me-text {
+    font-size: 1.2rem;
+  }
+  .languages-i-speak {
+    padding: 80px;
+  }
+  .languages-card {
+    padding: 120px 140px;
+  }
+
+  .contact {
+    padding-bottom: 150px;
+  }
 }

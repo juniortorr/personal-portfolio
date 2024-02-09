@@ -25,7 +25,7 @@ const setImgs = (imgs) => {
 
 const checkSlide = () => {
   if (header.textContent.includes('Languages')) {
-    header.textContent = 'Skills In Progress';
+    header.textContent = "Skills I'm Learning";
     return setImgs(inProgressSkills);
   }
   header.textContent = 'Languages I Speak';

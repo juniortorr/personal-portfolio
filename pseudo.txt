@@ -1,9 +1,11 @@
-Languages I speak
-    [current languages], [languages in progress]
-    loop through the img tags and populate them with the current array
-        wait 4 seconds 
-        add class = "top-slide" & class = "bottom-slide"
-        loop through the images and replace them with the other ones
-
-setImgs 
-    select all of the current imgs 
+Checklist
+    Test for crossbrowser compatibility (polyfill animations etc etc)
+    Double check tablet queries
+    Double check mobile queries (Portrait AND Landscape)
+    Laptop Queries 
+    Desktop Queries 
+    Design an actual footer ya nerd 
+    Get a profile picture 
+    Wrap all of the buttons/links with <a/> 
+    change out the github logo so its not getting cut off 
+    Add a submit button into the design
