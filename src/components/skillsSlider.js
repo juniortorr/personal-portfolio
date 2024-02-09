@@ -7,7 +7,6 @@ import Mongo from '../images/mongoDB.png';
 import NodeJS from '../images/nodeJS.png';
 import TypeScript from '../images/typescript.png';
 
-const card = document.querySelector('.languages-card');
 const topIcons = document.querySelector('.top-icons');
 const lowerIcons = document.querySelector('.lower-icons');
 const header = document.querySelector('.language-header-txt');
