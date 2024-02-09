@@ -22,10 +22,6 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.handlebars$/,
-        loader: 'handlebars-loader',
-      },
-      {
         test: /\.(plug|jpg|jpeg|gif|png|svg)$/i,
         type: 'asset/resource',
       },
