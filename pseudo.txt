@@ -1,9 +1,5 @@
 Checklist
     Test for crossbrowser compatibility (polyfill animations etc etc)
-    Double check tablet queries
-    Double check mobile queries (Portrait AND Landscape)
-    Laptop Queries 
-    Desktop Queries 
     Design an actual footer ya nerd 
     Get a profile picture 
     Wrap all of the buttons/links with <a/> 

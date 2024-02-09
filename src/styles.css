@@ -676,6 +676,9 @@ footer img {
   .hero-content {
     transform: scale(1.05);
   }
+  nav li {
+    padding: 15px 20px;
+  }
 
   .about-me {
     padding: 150px;
