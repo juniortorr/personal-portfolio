@@ -1,11 +1,8 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const projects = document.querySelectorAll('.experience-card');
-      projects.forEach((project) => {
-        project.classList.add('fade-in');
-      });
+      document.querySelector('.contact').classList.add('grow');
     }
   });
 });
-observer.observe(document.querySelector('.experience'));
+observer.observe(document.querySelector('.contact'));
