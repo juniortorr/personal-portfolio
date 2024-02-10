@@ -14,8 +14,8 @@ export default function card(project) {
           <p class="card-subheading">${project.subheading}</p>
         </div>
         <div class="card-icons">
-          <img src=${gitHub} alt="github link" />
-          <img src=${share} alt="share with others link" />
+          <a href=""><img src=${gitHub} alt="github link" /><a/>
+          <a href=""><img src=${share} alt="share with others link" /><a/>
         </div>
       </div>
       <p class="project-para">
