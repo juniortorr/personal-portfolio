@@ -7,6 +7,6 @@ Checklist:
     Get a profile picture,
     Fix linked in resolution
 
-Current: Wrap all of the buttons/links with <a/>
+Current: 
 
  
