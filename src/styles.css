@@ -122,7 +122,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+a {
+  cursor: pointer;
+}
 :root {
   --button-color: #f5f1e3;
   --accent-color: #9ad5a8;
@@ -245,7 +247,7 @@ nav {
   align-self: flex-end;
   margin-right: 20px;
 }
-nav li {
+nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,6 +320,9 @@ nav img {
   margin-top: 20px;
   background-color: var(--button-color);
   transition: all 0.1s ease-in-out;
+}
+.view-work-link {
+  align-self: flex-end;
 }
 .hero-btn:hover {
   transform: scale(1.1);
@@ -672,7 +677,7 @@ footer img {
 }
 
 @media (min-width: 640px) {
-  nav li {
+  nav a {
     padding: 10px 15px;
   }
   .hero-text {
@@ -737,7 +742,7 @@ footer img {
   .hero-content {
     transform: scale(1.05);
   }
-  nav li {
+  nav a {
     padding: 15px 20px;
   }
 
