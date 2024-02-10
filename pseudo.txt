@@ -1,7 +1,12 @@
-Checklist
-    Test for crossbrowser compatibility (polyfill animations etc etc)
-    Design an actual footer ya nerd 
-    Get a profile picture 
-    Wrap all of the buttons/links with <a/> 
-    change out the github logo so its not getting cut off 
-    Add a submit button into the design
+Checklist:
+    High Priority:
+        Wrap all of the buttons/links with <a/>,
+        Add a submit button into the design,
+    
+    Low Priority: 
+    Design an actual footer ya nerd,
+    Get a profile picture,
+
+Current: { Test for crossbrowser compatibility (polyfill animations etc etc) }
+
+ 
