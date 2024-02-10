@@ -7,6 +7,6 @@ Checklist:
     Design an actual footer ya nerd,
     Get a profile picture,
 
-Current: { Test for crossbrowser compatibility (polyfill animations etc etc) }
+Current: Test for crossbrowser compatibility (polyfill animations etc etc) 
 
  
