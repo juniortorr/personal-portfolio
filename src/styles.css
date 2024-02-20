@@ -151,7 +151,7 @@ a {
 @keyframes bounce {
   50% {
     -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
 }
 
@@ -333,7 +333,7 @@ nav img {
   color: var(--button-color);
 }
 .scribble {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   -webkit-animation-name: bounce;
   animation-name: bounce;
   -webkit-animation-timing-function: ease-in-out;
@@ -404,7 +404,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   background-color: var(--button-color);
   padding: 50px 0px;
   box-sizing: border-box;
