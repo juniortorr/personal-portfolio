@@ -414,6 +414,7 @@ main {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  justify-content: center;
 }
 .language-header-txt {
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -431,7 +432,7 @@ main {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(#0a3b3d, #309a87);
-  padding: 75px 60px;
+  padding: 65px 60px;
   gap: 40px;
   box-sizing: border-box;
   border-radius: 15px;
@@ -486,6 +487,32 @@ main {
   background-color: white;
   border-radius: 10px;
 }
+
+.other-skills {
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 330px;
+  padding: 50px 40px;
+  margin-top: 75px;
+}
+/* .skills-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+} */
+.skills-header > h2 {
+  font-size: var(--mobile-heading-size);
+  text-align: center;
+}
+
+.skills-icons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .experience {
   background-color: var(--button-color);
   display: flex;
@@ -536,7 +563,6 @@ main {
   height: 32px;
   width: 32px;
   justify-self: flex-end;
-  margin-right: 10px;
 }
 
 .card-icons {
@@ -685,10 +711,16 @@ footer a:hover {
   .languages-header h2 {
     font-size: 25px;
   }
+  .other-skills {
+    padding: 50px 30px;
+  }
 }
 @media (min-width: 475px) {
   .contact {
     padding-top: 40px;
+  }
+  .card-icons img {
+    margin-right: 10px;
   }
 }
 
