@@ -408,6 +408,7 @@ main {
   padding: 50px 0px;
   box-sizing: border-box;
   overflow: visible;
+  gap: 50px;
 }
 .languages-header {
   display: flex;
@@ -489,21 +490,16 @@ main {
 }
 
 .other-skills {
-  /* display: flex;
-  flex-direction: column; */
   max-width: 330px;
   padding: 50px 40px;
-  margin-top: 75px;
 }
-/* .skills-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-} */
+
 .skills-header > h2 {
   font-size: var(--mobile-heading-size);
   text-align: center;
+}
+.skills-header > img {
+  width: 60px;
 }
 
 .skills-icons {
@@ -737,6 +733,13 @@ footer a:hover {
   .languages-card {
     padding: 80px 120px;
   }
+  .other-skills {
+    max-width: 450px;
+    padding: 75px 60px;
+  }
+  .skills-icons {
+    padding: 10px;
+  }
   .experience {
     padding: 40px 30px;
   }
@@ -751,6 +754,9 @@ footer a:hover {
   .about-me {
     padding: 70px 80px;
   }
+  .languages-card {
+    max-width: 460px;
+  }
   .about-me-header {
     max-width: 700px;
   }
@@ -763,12 +769,17 @@ footer a:hover {
     font-size: 17.5px;
   }
   .languages-i-speak {
+    padding: 80px;
+    gap: 100px;
+    z-index: 1;
+  }
+  .languages-i-speak > * {
     transform: scale(1.1);
-    padding: 40px;
   }
   .about-me {
     padding: 100px;
   }
+
   .contact > * {
     transform: scale(1.1);
   }
@@ -798,7 +809,10 @@ footer a:hover {
     padding: 150px;
   }
   .languages-card {
-    padding: 100px 120px;
+    padding: 75px 120px;
+  }
+  .other-skills {
+    padding: 75px 90px;
   }
   footer {
     justify-content: center;
@@ -828,7 +842,7 @@ footer a:hover {
     padding: 80px;
   }
   .languages-card {
-    padding: 120px 140px;
+    padding: 90px 100px;
   }
 
   .contact {
