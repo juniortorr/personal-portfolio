@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const { EnvironmentPlugin } = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -53,6 +54,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/views/home.html',
       minify: true,
+    }),
+    new EnvironmentPlugin({
+      NODE_ENV: 'development',
+      MAILSLURP_API_KEY: '6506e120f92ffbd315518bb9cb7d87a74daf8b83701972fe7dc244063456343e',
+      MAILSLURP_EMAIL: '73507db7-7601-4ce0-be9d-2ca2abc8f272',
     }),
   ],
   output: {

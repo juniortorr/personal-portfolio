@@ -130,10 +130,11 @@
           <br />
           project, or just want to say hello?
         </h2>
-        <form action="/">
+        <form method="post" action="/">
           <div class="contact-info">
             <label for="first-name"></label>
             <input
+              required
               type="text"
               name="firstName"
               id="first-name"
@@ -142,9 +143,10 @@
             />
             <label for="last-name"></label>
             <input
+              required
               type="text"
               name="lastName"
-              id="last-name"
+              id="email"
               class="last-name"
               placeholder="Email"
             />
@@ -157,6 +159,7 @@
             rows="10"
             placeholder="is this thing on?"
           ></textarea>
+          <button class="send">Send</button>
         </form>
       </section>
     </main>

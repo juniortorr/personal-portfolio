@@ -125,6 +125,23 @@ table {
 a {
   cursor: pointer;
 }
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+input:-webkit-internal-autofill-selected {
+  border: none;
+  background-color: -internal-light-dark(rgba(178, 189, 209, 0), rgba(70, 90, 126, 0.4));
+  border-bottom: 2px solid white;
+
+  -webkit-text-fill-color: white;
+}
 :root {
   --button-color: #f5f1e3;
   --accent-color: #9ad5a8;
@@ -648,6 +665,28 @@ textarea {
   width: 100%;
   border-radius: 15px;
   padding: 10px;
+  background-color: var(--button-color);
+  /* box-sizing: border-box; */
+}
+.send {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: var(--mobile-paragraph-size);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+}
+.send:hover {
+  background-color: var(--button-color);
+  color: black;
+}
+.success {
+  background-color: green;
+}
+.fail {
+  background-color: rgb(184, 58, 58);
 }
 .slant {
   width: 100%;
