@@ -235,6 +235,7 @@ html {
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -258,7 +259,7 @@ nav a {
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
   transition: all 0.1s ease-in-out;
 }
-nav li:hover {
+nav a:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -525,7 +526,7 @@ main {
 .card-heading {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  width: 100%;
 }
 .card-heading-text {
   display: flex;
@@ -535,11 +536,18 @@ main {
 .card-icons img {
   height: 32px;
   width: 32px;
+  justify-self: flex-end;
+  margin-right: 10px;
 }
+
 .card-icons {
-  display: flex;
-  gap: 10px;
+  transition: all 0.2s ease-in-out;
 }
+
+.card-icons:hover {
+  transform: scale(1.2);
+}
+
 .project-title {
   font-size: var(--card-heading-mobile);
   font-weight: var(--heading-weight);
@@ -641,9 +649,17 @@ footer img {
   height: auto;
   width: 25px;
 }
+
+footer a {
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
 .footer-icons {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
 }
