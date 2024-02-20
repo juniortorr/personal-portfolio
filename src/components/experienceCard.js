@@ -1,5 +1,4 @@
 import gitHub from '../images/github-logo-mobile.png';
-import share from '../images/share.png';
 
 export default function card(project) {
   return `
@@ -14,8 +13,7 @@ export default function card(project) {
           <p class="card-subheading">${project.subheading}</p>
         </div>
         <div class="card-icons">
-          <a href=""><img src=${gitHub} alt="github link" /><a/>
-          <a href=""><img src=${share} alt="share with others link" /><a/>
+          <a href="https://github.com/juniortorr"><img src=${gitHub} alt="github link" /></a>
         </div>
       </div>
       <p class="project-para">
