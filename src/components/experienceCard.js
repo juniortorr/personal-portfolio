@@ -2,10 +2,12 @@ import gitHub from '../images/github-logo-mobile.png';
 
 export default function card(project) {
   return `
+  <a href=${project.url}>
     <img
       src=${project.img}
       alt="micamera studios photography website project"
     />
+    </a>
     <div class="card-text">
       <div class="card-heading">
         <div class="card-heading-text">

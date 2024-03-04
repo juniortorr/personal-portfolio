@@ -561,7 +561,7 @@ main {
   box-sizing: border-box;
   opacity: 0;
 }
-.experience-card > img {
+.experience-card > a > img {
   height: auto;
   width: 100%;
   border-top-left-radius: 10px;
